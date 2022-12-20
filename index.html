@@ -6,6 +6,7 @@
 <script type="text/javascript">
 
     var dir = "./";
+    $("div").append("<p>"+dir+"</p>");
     var fileextension = ".jpg";
 $(document).ready(function(){
     $.ajax({
@@ -15,7 +16,7 @@ $(document).ready(function(){
                 $("div").append("<p>"+data+"</p>");
                 var filename = this.href.replace("https://lct-dev.github.io/grid-ajax/", "");
                 console.log(filename);
-                $("div").append("<img src='./" + filename + "'>");
+                $("gallery").append("<img src='./" + filename + "'>");
             });
         }
     });
