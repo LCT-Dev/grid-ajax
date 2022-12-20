@@ -12,6 +12,7 @@ $(document).ready(function(){
         url: dir,
         success: function (data) {
             $(data).find("a:contains(" + fileextension + ")").each(function () {
+                $("div").append("<p>"+data+"</p>");
                 var filename = this.href.replace("https://lct-dev.github.io/grid-ajax/", "");
                 console.log(filename);
                 $("div").append("<img src='" + dir + filename + "'>");
