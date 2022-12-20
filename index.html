@@ -15,7 +15,7 @@ $(document).ready(function(){
                 $("div").append("<p>"+data+"</p>");
                 var filename = this.href.replace("https://lct-dev.github.io/grid-ajax/", "");
                 console.log(filename);
-                $("div").append("<img src='" + dir + filename + "'>");
+                $("div").append("<img src='" + filename + "'>");
             });
         }
     });
